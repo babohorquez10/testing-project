@@ -1,6 +1,7 @@
 import OrderSummary from './pages/summary/OrderSummary';
 import { Col, Container, Row } from 'react-bootstrap';
-import './App.css';
+import OrderEntry from './pages/entry/OrderEntry';
+import './App.scss';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Container>
         <Row>
           <Col xs={12}>
+            <OrderEntry />
             <OrderSummary />
           </Col>
         </Row>
