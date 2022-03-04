@@ -24,7 +24,7 @@ function ScoopOption({ name, imgSrc, addScoops }) {
   return (
     <Col lg={3} md={4} sm={6} xs={12} className="sundae-option scoop-option">
       <img src={imgSrc} alt={`${name} scoop`} />
-      <Form.Group>
+      <Form.Group controlId={`${name}-count`}>
         <Form.Label>{name}</Form.Label>
         <Form.Control type="number" onChange={handleChange} value={num} />
       </Form.Group>
